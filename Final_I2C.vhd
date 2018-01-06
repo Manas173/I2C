@@ -99,6 +99,7 @@ process(clk,reset,state)-- Chnage of i2c_enable which is later used for clock sy
 		else
 			if(state=initial_idle_state or state=initial_start_state or state=stop_state) then
 				i2c_enable<='0';
+
 			else
 				i2c_enable<='1';
 			end if;
